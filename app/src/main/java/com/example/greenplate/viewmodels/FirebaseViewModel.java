@@ -35,6 +35,9 @@ public class FirebaseViewModel extends ViewModel {
     private static Firebase firebase;
     private static User user;
     private static FirebaseViewModel viewModel;
+    private static final String DEFAULT_USER_ID = "local-hardcoded-user";
+    private static final String DEFAULT_USER_NAME = "Local User";
+    private static final String DEFAULT_USER_EMAIL = "local.user@fixaplate.local";
 
     /**
      * Constructs a new FirebaseViewModel and initializes the Firebase services.
@@ -43,6 +46,8 @@ public class FirebaseViewModel extends ViewModel {
         firebase = Firebase.getInstance();
         if (firebase.getAuth().getCurrentUser() != null) {
             loadUser();
+        } else {
+            user = createHardcodedUser();
         }
     }
 
@@ -54,6 +59,11 @@ public class FirebaseViewModel extends ViewModel {
     }
 
     public static void loadUser() {
+        if (firebase.getAuth().getCurrentUser() == null) {
+            user = createHardcodedUser();
+            return;
+        }
+
         String email = firebase.getAuth().getCurrentUser().getEmail();
         Dictionary<String, String> userInfo = new Hashtable<>();
         ArrayList<String> mealIds = new ArrayList();
@@ -228,7 +238,14 @@ public class FirebaseViewModel extends ViewModel {
     }
 
     public User getUser() {
+        if (user == null) {
+            user = createHardcodedUser();
+        }
         return user;
+    }
+
+    private static User createHardcodedUser() {
+        return new User(DEFAULT_USER_NAME, DEFAULT_USER_ID, DEFAULT_USER_EMAIL);
     }
 
     public boolean saveOrUpdateMeal(Meal meal) {
