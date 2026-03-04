@@ -91,6 +91,17 @@ public class LoginActivity extends AppCompatActivity {
                 String password = passwordTextView.getText().toString();
 
                 if (checkInput(username) && checkInput(password)) {
+                    if (FirebaseViewModel.isDemoLogin(username, password)) {
+                        FirebaseViewModel.useDemoUser();
+                        Toast.makeText(LoginActivity.this,
+                                "Demo account loaded.",
+                                Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(LoginActivity.this,
+                                HomeActivity.class);
+                        startActivity(intent);
+                        return;
+                    }
+
                     FirebaseAuth mAuth = fvm.getAuth();
                     mAuth.signInWithEmailAndPassword(username, password)
                             .addOnCompleteListener(LoginActivity.this,
