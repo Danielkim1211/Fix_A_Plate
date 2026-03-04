@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="450dp"
+        android:layout_height="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/red_rectangle" />
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="360dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="8dp"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shopping_list" />
+
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="88dp"
+        android:text="Name:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <EditText
+        android:id="@+id/shoppingList_name_enter"
+        android:layout_width="355dp"
+        android:layout_height="46dp"
+        android:background="#EEEEEE"
+        android:hint=" Banana"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <TextView
+        android:id="@+id/quantity_label"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="88dp"
+        android:text="Quantity:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
+
+
+    <EditText
+        android:id="@+id/shoppingList_quantity_enter"
+        android:layout_width="355dp"
+        android:layout_height="46dp"
+        android:background="#EEEEEE"
+        android:hint=" 2"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <TextView
+        android:id="@+id/calories_per_quantity_label"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="88dp"
+        android:text="Calories Per Quantity:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <EditText
+        android:id="@+id/shoppingList_calories_enter"
+        android:layout_width="355dp"
+        android:layout_height="46dp"
+        android:background="#EEEEEE"
+        android:hint=" 120"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395" />
+
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginBottom="236dp"
+        android:backgroundTint="#311E10"
+        android:drawablePadding="0px"
+        android:paddingLeft="100px"
+        android:paddingRight="100px"
+        android:text="Save"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:cornerRadius="40px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="448dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="630dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/nav_bar" />
+
+
+    <ImageButton
+        android:id="@+id/toHomePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/red_home_nav_button" />
+
+    <ImageButton
+        android:id="@+id/toShoppingPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="304dp"
+        android:layout_marginBottom="9dp"
+        android:background="@null"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/red_shopping_list_button" />
+
+    <ImageButton
+        android:id="@+id/toRecipePage"
+        android:layout_width="90dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="252dp"
+        android:background="@null"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        app:layout_constraintBottom_toBottomOf="@+id/toIngredientsPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toIngredientsPage"
+        app:srcCompat="@drawable/cookbook_button" />
+
+    <ImageButton
+        android:id="@+id/toIngredientsPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="244dp"
+        android:layout_marginEnd="86dp"
+        android:background="@null"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        app:layout_constraintBottom_toBottomOf="@+id/toShoppingPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toShoppingPage"
+        app:srcCompat="@drawable/ingredients_button" />
+
+    <ImageButton
+        android:id="@+id/toInputPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="333dp"
+        android:background="@null"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        app:layout_constraintBottom_toBottomOf="@+id/toRecipePage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toRecipePage"
+        app:srcCompat="@drawable/input_button" />
+
+    <ImageButton
+        android:id="@+id/toPersonalPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="26dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+

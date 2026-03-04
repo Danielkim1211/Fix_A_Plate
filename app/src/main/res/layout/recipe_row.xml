@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="404dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle_item" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="rferf"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/navigate_to_recipe_button"
+        android:layout_width="181dp"
+        android:layout_height="81dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="4dp"
+        android:background="#00FFFFFF"
+        android:drawableRight="@drawable/arrow"
+        android:text="Go to Recipe"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:iconPadding="0dp"
+        app:iconSize="24dp"
+        app:iconTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "485257034700",
+    "firebase_url": "https://greenplate-df836-default-rtdb.firebaseio.com",
+    "project_id": "greenplate-df836",
+    "storage_bucket": "greenplate-df836.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485257034700:android:0ca1024d8f23fb6d6f3b69",
+        "android_client_info": {
+          "package_name": "com.example.greenplate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACwQdc2v8T8U-Y2EWqyewXYckzsNEmUek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
