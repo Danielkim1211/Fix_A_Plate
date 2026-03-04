@@ -35,6 +35,8 @@ public class FirebaseViewModel extends ViewModel {
     private static Firebase firebase;
     private static User user;
     private static FirebaseViewModel viewModel;
+    private static final String DEMO_LOGIN_EMAIL = "demo@fixaplate.local";
+    private static final String DEMO_LOGIN_PASSWORD = "fixaplate-demo";
     private static final String DEFAULT_USER_ID = "local-hardcoded-user";
     private static final String DEFAULT_USER_NAME = "Local User";
     private static final String DEFAULT_USER_EMAIL = "local.user@fixaplate.local";
@@ -242,6 +244,24 @@ public class FirebaseViewModel extends ViewModel {
             user = createHardcodedUser();
         }
         return user;
+    }
+
+    /**
+     * Validates whether the provided credentials match the built-in demo account.
+     *
+     * @param email login email input.
+     * @param password login password input.
+     * @return true when email/password match the demo credentials.
+     */
+    public static boolean isDemoLogin(String email, String password) {
+        return DEMO_LOGIN_EMAIL.equals(email) && DEMO_LOGIN_PASSWORD.equals(password);
+    }
+
+    /**
+     * Activates the local hardcoded demo user without requiring Firebase auth.
+     */
+    public static void useDemoUser() {
+        user = createHardcodedUser();
     }
 
     private static User createHardcodedUser() {
